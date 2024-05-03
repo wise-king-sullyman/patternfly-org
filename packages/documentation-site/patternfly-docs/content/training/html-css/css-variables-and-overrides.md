@@ -57,11 +57,11 @@ Add the property that is being modified. In this case, modify the color property
 The custom property name should now be: `--pf-v6-c-alert--m-success__title--Color`
 
 #### Step 2.5 
-Define the value of the component-level CSS variable. PatternFly's global danger color is: `--pf-v6-global--danger-color--100`. You can reference PatternFly’s <a href="/design-foundations/colors" target="_blank">global colors documentation</a> for more information.
+/* Define the value of the component-level CSS variable. PatternFly's global danger color is: `--pf-v6-global--danger-color--100`. You can reference PatternFly’s <a href="/design-foundations/colors" target="_blank">global colors documentation</a> for more information. */
 
 Assign the custom property name `(--pf-v6-c-alert--m-success__title--Color)` that is already inside the `.pf-v6-c-alert{}` block to the global danger color.
 
-It should look like this: `--pf-v6-c-alert--m-success__title--Color: var(--pf-v6-global--danger-color--100);`
+/* It should look like this: `--pf-v6-c-alert--m-success__title--Color: var(--pf-v6-global--danger-color--100);` */
 
 The resulting alert should match Figure 1.
 
@@ -72,13 +72,13 @@ The resulting alert should match Figure 1.
 <PageSection>
 ## Part 2: Overriding PatternFly global properties
 In PatternFly, global properties follow this general formula:
-`--pf-v6-global--concept--PropertyCamelCase--modifier--state`
+/* `--pf-v6-global--concept--PropertyCamelCase--modifier--state` */
 
 Global properties are prefixed with the word global.
  - A `concept` is something like a spacer or main-title.
  - A `PropertyCamelCase` is something like `BackgroundColor` or `FontSize`.
  - A `modifier` is something like `sm`, or `lg`.
- - A `state` is something like `hover` or `expanded`. They are concepts, never tied to an element or component. This is incorrect: `--pf-v6-global--h1--FontSize`. This is correct: `--pf-v6-global--FontSize--3xl`.
+/*  - A `state` is something like `hover` or `expanded`. They are concepts, never tied to an element or component. This is incorrect: `--pf-v6-global--h1--FontSize`. This is correct: `--pf-v6-global--FontSize--3xl`. */
 
 To explore this concept, override the global link color by setting it to the custom property for danger using the provided CodeSandbox for part 2. The `index.html` file contains a button and expandable component to demonstrate how changing a global variable has an impact across components.
 
@@ -97,18 +97,18 @@ It should look like this: `--pf-v6-global`
 #### Step 2.2 
 Add the concept to the global custom property. The concept for the link color is `link`.
 
-The global custom property should now look like this: `--pf-v6-global--link`
+/* The global custom property should now look like this: `--pf-v6-global--link` */
 
 #### Step 2.3 
 Add the property to the global custom property. As the color is being modified, add the color property as the next step.
 
-The global custom property should now look like: `--pf-v6-global--link--Color`
+/* The global custom property should now look like: `--pf-v6-global--link--Color` */
 
 #### Step 2.4 
-Define the value of the global variable. PatternFly's global danger color is: `--pf-v6-global--danger-color--100`.
-Assign the custom property name `(--pf-v6-global--link--Color)` that is already inside of the `:root` block to the global danger color.
+/* Define the value of the global variable. PatternFly's global danger color is: `--pf-v6-global--danger-color--100`. */
+/* Assign the custom property name `(--pf-v6-global--link--Color)` that is already inside of the `:root` block to the global danger color. */
 
-It should look like this: `--pf-v6-global--link--Color: var(--pf-v6-global--danger-color--100);`
+/* It should look like this: `--pf-v6-global--link--Color: var(--pf-v6-global--danger-color--100);` */
 
 The resulting UI in the CodeSandbox should match Figure 2. 
 
@@ -151,11 +151,11 @@ Add the property being applied to the badge after the element.
 It should look like this: `--pf-v6-c-label__badge--MarginRight`
 
 #### Step 2.4 
-Define the value of the new custom CSS variable. PatternFly's global variable for 8px of space is `--pf-v6-global--spacer--sm`. You can reference <a href="/design-foundations/spacers" target="_blank">PatternFly’s documentation about spacers</a> for more information.
+Define the value of the new custom CSS variable. PatternFly's global variable for 8px of space is `--pf-t--global--spacer--sm`. You can reference <a href="/design-foundations/spacers" target="_blank">PatternFly’s documentation about spacers</a> for more information.
 
 Assign the custom property name `--pf-v6-c-label__badge--MarginRight` that is already inside of the `.pf-v6-c-label{}` block to the global variable for 8px of space.
 
-It should look like this: `--pf-v6-c-label__badge--MarginRight: var(--pf-v6-global--spacer--sm);`
+It should look like this: `--pf-v6-c-label__badge--MarginRight: var(--pf-t--global--spacer--sm);`
 
 #### Step 2.5
 Assign the new custom property name to the property that is being overridden. Add a margin-right declaration inside of `.pf-v6-c-label__badge{}` and assign it to the new margin variable.
@@ -180,13 +180,13 @@ Note the title component in the `<body>` of the `index.html` file. It has a modi
 Follow the existing convention for global font size custom properties.
 
 #### Step 2.1
-Add the new custom property for font size inside of the `:root{}` block. This applies it to the global scope of the application. It should look like this: `--pf-v6-global--FontSize--5xl`
+/* Add the new custom property for font size inside of the `:root{}` block. This applies it to the global scope of the application. It should look like this: `--pf-v6-global--FontSize--5xl` */
 
 #### Step 2.2 
 Define the value of the new global variable. Assign the property name to the pixel value for the new font size.
 Update the line added in step 2.1 to be 42px.
 
-It should look like this: `--pf-v6-global--FontSize--5xl: 42px;`
+/* It should look like this: `--pf-v6-global--FontSize--5xl: 42px;` */
 
 ### Step 3. Create a local component level custom property
 Create a local component level custom property in the `.pf-v6-c-title{}` block in the styles.css file. Set its value to the newly defined global property.
@@ -210,7 +210,7 @@ It should look like this: `--pf-v6-c-title--m-5xl--FontSize`
 #### Step 3.4 
 Define the value of the component level custom property to be equal to the newly defined global variable.
 
-It should look like this: `--pf-v6-c-title--m-5xl--FontSize: var(--pf-v6-global--FontSize--5xl);`
+/* It should look like this: `--pf-v6-c-title--m-5xl--FontSize: var(--pf-v6-global--FontSize--5xl);` */
 
 ### Step 4. Define the styles for the new 5xl variation.
 

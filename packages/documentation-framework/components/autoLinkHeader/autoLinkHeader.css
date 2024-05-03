@@ -3,12 +3,12 @@
 }
 
 .ws-heading-anchor {
-  color: var(--pf-v6-global--Color--100);
-  transform: translate(calc(-100% - var(--pf-v6-global--spacer--xs)), -50%);
+  color: var(--pf-t--global--icon--color--regular);
+  transform: translate(calc(-100% - var(--pf-t--global--spacer--xs)), -50%);
   opacity: 0;
   position: absolute;
-  left: 0;
-  top: 50%;
+  inset-inline-start: 0;
+  inset-block-start: 50%;
 }
 
 .ws-heading-anchor-icon {

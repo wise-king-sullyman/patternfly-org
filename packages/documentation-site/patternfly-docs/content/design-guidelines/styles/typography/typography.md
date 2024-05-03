@@ -161,7 +161,7 @@ For example, if a body of text uses a line height of 1.5 and the body text size 
   <GridItem span={12}>
     <LineHeightTitle>
       <CheckCircleIcon color="#52A549" />
-      <span style={{marginLeft: 'var(--pf-v6-global--spacer--sm)'}}>Correct</span>
+      <span style={{marginLeft: 'var(--pf-t--global--spacer--sm)'}}>Correct</span>
     </LineHeightTitle>
     <div>Include line height space when laying out text with spacers.</div>
     <img alt="correct line height space example" style={{maxHeight: '158px', padding: '16px'}} src={correct} />
@@ -169,7 +169,7 @@ For example, if a body of text uses a line height of 1.5 and the body text size 
   <GridItem span={12}>
     <LineHeightTitle>
       <TimesCircleIcon color="#CC0000" />
-      <span style={{marginLeft: 'var(--pf-v6-global--spacer--sm)'}}>Incorrect</span>
+      <span style={{marginLeft: 'var(--pf-t--global--spacer--sm)'}}>Incorrect</span>
     </LineHeightTitle>
     <div>Don't align spacing solely to the text. Always include the line height space.</div>
     <img alt="incorrect line height space example" style={{maxHeight: '124px', padding: '16px'}} src={incorrect} />

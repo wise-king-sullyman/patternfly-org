@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Flex, FlexItem } from '@patternfly/react-core';
+import { Title, Flex, FlexItem, Icon } from '@patternfly/react-core';
 import LinkIcon from '@patternfly/react-icons/dist/esm/icons/link-icon';
 import { Link } from '../link/link';
 import { slugger } from '../../helpers/slugger';
@@ -34,8 +34,10 @@ export const AutoLinkHeader = ({
           className={`ws-heading ${className}`}
           tabIndex={-1}
         >
-          <Link href={`#${slug}`} className="ws-heading-anchor" tabIndex="-1" aria-hidden>
-            <LinkIcon className="ws-heading-anchor-icon" style={{ verticalAlign: 'middle' }} />
+          <Link href={`#${slug}`} className="ws-heading-anchor" aria-labelledby={slug}>
+            <Icon>
+              <LinkIcon className="ws-heading-anchor-icon" />
+            </Icon>
           </Link>
           {children}
         </Title>

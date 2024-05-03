@@ -2266,6 +2266,11 @@
   resolved "https://registry.yarnpkg.com/@patternfly/patternfly/-/patternfly-6.0.0-alpha.117.tgz#ae62a787f99085acfecb4422fd1c08cace2fd23a"
   integrity sha512-AqN09ur+jQXqtu7mf1UD7YmFa9fsbeb3tuyMwxut7P9QW4dvdTkHhFC9zv5eaJ5v7M03vvKKtxteVwPLaDn2zA==
 
+"@patternfly/patternfly@6.0.0-alpha.118":
+  version "6.0.0-alpha.118"
+  resolved "https://registry.yarnpkg.com/@patternfly/patternfly/-/patternfly-6.0.0-alpha.118.tgz#ba563a578178887dceb74b17c6646a7dea5a06f5"
+  integrity sha512-vQUI5xn+b00mFiWBa2IciFH2jOuHIOUsfZ+j2QxHbBm20e17voxZwCJcLhH5i0638JrduoKYEyRR0JRBEQVkQA==
+
 "@patternfly/quickstarts@^5.1.0":
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/@patternfly/quickstarts/-/quickstarts-5.1.0.tgz#c60c782ca8e7019b82b6aa2a533deeed68da922b"

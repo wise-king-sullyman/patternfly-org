@@ -16,7 +16,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">4px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--xs</code>
+      <code className="ws-code">--pf-t--global--spacer--xs</code>
     </div>
   </div>
 </div>
@@ -28,7 +28,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">8px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--sm</code>
+      <code className="ws-code">--pf-t--global--spacer--sm</code>
     </div>
   </div>
 </div>
@@ -40,7 +40,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">16px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--md</code>
+      <code className="ws-code">--pf-t--global--spacer--md</code>
     </div>
   </div>
 </div>
@@ -52,7 +52,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">24px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--lg</code>
+      <code className="ws-code">--pf-t--global--spacer--lg</code>
     </div>
   </div>
 </div>
@@ -64,7 +64,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">32px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--xl</code>
+      <code className="ws-code">--pf-t--global--spacer--xl</code>
     </div>
   </div>
 </div>
@@ -76,7 +76,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">48px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--2xl</code>
+      <code className="ws-code">--pf-t--global--spacer--2xl</code>
     </div>
   </div>
 </div>
@@ -88,7 +88,7 @@ To see a list of all PatternFly CSS variables, including spacers [visit our deve
     <div class="ws-content-spacerTitle">64px spacer</div>
     <div class="pf-v6-u-display-flex pf-v6-u-flex-direction-row">
       <p class="pf-v6-u-my-0 pf-v6-u-mr-sm ws-content-p">Global CSS variable </p>
-      <code className="ws-code">--pf-v6-global--spacer--3xl</code>
+      <code className="ws-code">--pf-t--global--spacer--3xl</code>
     </div>
   </div>
 </div>
@@ -109,7 +109,7 @@ There are additional considerations to keep in mind when adapting spacers to dif
 
 Some components like icons, buttons, and input fields, have a fixed amount of padding built in. Remember to account for this extra space when laying the content out on your page. You may not have as much horizontal or vertical room as you think.
 
-<img src="./padding-example.png" alt="Spacers example" style="background-color: var(--pf-v6-global--palette--white)" />
+/* <img src="./padding-example.png" alt="Spacers example" style="background-color: var(--pf-v6-global--palette--white)" /> */
 
 <br/>
 <br/>
